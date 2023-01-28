@@ -26,7 +26,8 @@ def check_check():
     for c in food_entry:
         if food_variables[x].get() == 1:
             food_entry[x].config(state=NORMAL)
-            food_entry[x].delete(0, END)
+            if food_entry[x].get() == "0":
+                food_entry[x].delete(0, END)
             food_entry[x].focus()
         else:
             food_entry[x].config(state=DISABLED)
@@ -37,7 +38,8 @@ def check_check():
     for c in beverage_entry:
         if beverage_variables[x].get() == 1:
             beverage_entry[x].config(state=NORMAL)
-            beverage_entry[x].delete(0, END)
+            if beverage_entry[x].get() == "0":
+                beverage_entry[x].delete(0, END)
             beverage_entry[x].focus()
         else:
             beverage_entry[x].config(state=DISABLED)
@@ -48,7 +50,8 @@ def check_check():
     for c in dessert_entry:
         if dessert_variables[x].get() == 1:
             dessert_entry[x].config(state=NORMAL)
-            dessert_entry[x].delete(0, END)
+            if dessert_entry[x].get() == "0":
+                dessert_entry[x].delete(0, END)
             dessert_entry[x].focus()
         else:
             dessert_entry[x].config(state=DISABLED)
