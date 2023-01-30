@@ -1,0 +1,23 @@
+Information:	N# - 4939                   	30/1/2023-11:47*************************************************************
+Items		Quantity	Cost
+------------------------------------------------------
+Argentinian Beef		2	$ 3.3
+Smoked Turkey		1	$ 2.31
+Kebab		1	$ 3.22
+Fetta Pasta		211	$ 419.89
+Coke		5	$ 4.95
+Passion Fruit Juice		2	$ 4.0
+Lemon Pie		2	$ 3.08
+Creme Brulee		1	$ 1.32
+Milk Shake		1	$ 1.94
+Carrot Cake		1	$ 1.74
+------------------------------------------------------
+Cost of Foods: 			$ 428.72
+Cost of Beverages: 			$ 8.95
+Cost of Desserts: 			$ 8.08
+------------------------------------------------------
+Sub-Total: 			$ 445.75
+Tax: 			$ 31.2
+Total: 			$ 476.95
+*************************************************************
+SEE YOU SOON
