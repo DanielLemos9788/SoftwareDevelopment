@@ -46,7 +46,10 @@ while x < len(mcc_code):
     if x == len(mcc_code)-1:
         print("\t{")
         print(f'\t\t"partner_value": {mcc_code[x]},')
-        print(f'\t\t"validator_value": [{x1[x]}, {x2[x]}, {x3[x]}, {x4[x]}, {x5[x]}]')
+        print(f'\t\t"validator_value": [{x1[x]}, {x2[x]}, {x3[x]}, {x4[x]}, {x5[x]}, {x6[x]}, {x7[x]}, {x8[x]}, {x9[x]},'
+              f' {x10[x]}, {x11[x]}, {x12[x]}, {x13[x]}, {x14[x]}, {x15[x]}, {x16[x]}, {x17[x]}, {x18[x]}, {x19[x]},'
+              f' {x20[x]}, {x21[x]}, {x22[x]}, {x23[x]}, {x24[x]}, {x25[x]}, {x26[x]}, {x27[x]}, {x28[x]}, {x29[x]},'
+              f' {x30[x]}, {x31[x]}, {x32[x]}, {x33[x]}, {x34[x]}]')
         print("\t}")
     else:
         print("\t{")

@@ -580,6 +580,6 @@
 	},
 	{
 		"partner_value": "9399",
-		"validator_value": ["8413", "8421", "8422", "8423", "8430"]
+		"validator_value": ["8413", "8421", "8422", "8423", "8430", "990", "9900", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 	}
 ]
