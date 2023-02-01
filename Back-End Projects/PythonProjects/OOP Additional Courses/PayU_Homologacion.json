@@ -1,0 +1,585 @@
+[{
+		"partner_value": "742",
+		"validator_value": ["7500", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "763",
+		"validator_value": ["0111", "0112", "0113", "0114", "0115", "0119", "0121", "0122", "0123", "0124", "0125", "0126", "0127", "0128", "0129", "0141", "0142", "0143", "0144", "0145", "0149", "0150", "0161", "0162", "0163", "0164", "0170", "0210", "0230", "0240", "0311", "0321", "0322", "4653"]
+	},
+	{
+		"partner_value": "780",
+		"validator_value": ["8130", "9103", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "1520",
+		"validator_value": ["4111", "4112", "4210", "4220", "4290", "4311", "4312", "4321", "4330", "4390", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "1711",
+		"validator_value": ["4322", "4329", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "2842",
+		"validator_value": ["2023", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4011",
+		"validator_value": ["4912", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4111",
+		"validator_value": ["4911", "4921", "4922", "5011", "5021", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4214",
+		"validator_value": ["4923", "5210", "5221", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4215",
+		"validator_value": ["5121", "5122", "5224", "5229", "5310", "5320", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4511",
+		"validator_value": ["5111", "5112", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4582",
+		"validator_value": ["3030", "5223", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4722",
+		"validator_value": ["7911", "7912", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4789",
+		"validator_value": ["4930", "5012", "5022", "5222", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4812",
+		"validator_value": ["2630", "4652", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4816",
+		"validator_value": ["6209", "6312", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4899",
+		"validator_value": ["6010", "6020", "6110", "6120", "6130", "6190", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "4900",
+		"validator_value": ["3511", "3512", "3513", "3514", "3520", "3530", "3600", "3700", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5013",
+		"validator_value": ["2811", "2812", "2814", "2910", "2920", "3315", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5021",
+		"validator_value": ["4659", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5044",
+		"validator_value": ["2670", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5045",
+		"validator_value": ["2620", "4651", "4741", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5046",
+		"validator_value": ["2815", "2816", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5047",
+		"validator_value": ["2660", "3250", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5051",
+		"validator_value": ["0710", "0723", "0729", "2410", "2429", "2431", "2432", "2511", "2512", "2591", "2592", "2599", "3311", "4662", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5065",
+		"validator_value": ["2610", "2651", "2711", "2712", "2720", "2731", "2732", "2740", "2750", "2790", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5072",
+		"validator_value": ["2818", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5074",
+		"validator_value": ["2513", "2813", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5085",
+		"validator_value": ["1690", "2013", "2014", "2219", "2221", "2229", "2821", "2822", "2823", "2824", "2825", "2826", "2829", "3040", "3099", "3290", "3320", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5094",
+		"validator_value": ["0721", "0722", "081", "082", "0820", "2421", "2652", "3210", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5099",
+		"validator_value": ["0220", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5111",
+		"validator_value": ["1701", "1702", "1709", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5131",
+		"validator_value": ["2030", "4751", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5139",
+		"validator_value": ["1522", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5169",
+		"validator_value": ["0891", "0892", "0899", "2011", "2012", "2021", "2029", "4664", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5172",
+		"validator_value": ["0610", "0620", "0910", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5192",
+		"validator_value": ["5811", "5813", "6391", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5193",
+		"validator_value": ["0130", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5198",
+		"validator_value": ["2022", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5199",
+		"validator_value": ["1030", "1051", "1052", "1061", "1062", "1063", "1071", "1072", "1083", "1089", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5211",
+		"validator_value": ["0811", "0812", "0990", "1610", "1620", "1630", "1640", "2392", "2394", "2395", "2396", "2399", "4663", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5231",
+		"validator_value": ["2310", "2391", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5251",
+		"validator_value": ["2593", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5422",
+		"validator_value": ["0312", "1011", "1012", "4631", "4721", "4723", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5451",
+		"validator_value": ["1040", "4722", "4729", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5462",
+		"validator_value": ["1081", "1082", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5499",
+		"validator_value": ["1020", "4781", "4789", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5511",
+		"validator_value": ["4511", "4512", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5531",
+		"validator_value": ["2211", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5533",
+		"validator_value": ["2930", "4530", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5541",
+		"validator_value": ["4731", "4732", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5551",
+		"validator_value": ["3011", "3012", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5571",
+		"validator_value": ["3091", "4541", "4542", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5599",
+		"validator_value": ["3020", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5651",
+		"validator_value": ["1311", "1312", "4642", "4771", "4782", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5661",
+		"validator_value": ["1521", "1523", "4643", "4772", "9523", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5697",
+		"validator_value": ["1410", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5712",
+		"validator_value": ["3110", "312", "3120", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5713",
+		"validator_value": ["4753", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5719",
+		"validator_value": ["2393", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5722",
+		"validator_value": ["4644", "4649", "4754", "4755", "4759", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5732",
+		"validator_value": ["2640", "3313", "4742", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5733",
+		"validator_value": ["3220", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5734",
+		"validator_value": ["5820", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5735",
+		"validator_value": ["4769", "9002", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5811",
+		"validator_value": ["5621", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5812",
+		"validator_value": ["5611", "5629", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5813",
+		"validator_value": ["5630", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5814",
+		"validator_value": ["1084", "5612", "5613", "5619", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5912",
+		"validator_value": ["2100", "4645", "4773", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5921",
+		"validator_value": ["1101", "1102", "1103", "4632", "4711", "4719", "4724", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5931",
+		"validator_value": ["4775", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5940",
+		"validator_value": ["3092", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5941",
+		"validator_value": ["3230", "4762", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5942",
+		"validator_value": ["9001", "9101", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5943",
+		"validator_value": ["1811", "1812", "2817", "4761", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5945",
+		"validator_value": ["3240", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5946",
+		"validator_value": ["7420", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5948",
+		"validator_value": ["1420", "1511", "1512", "1513", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5949",
+		"validator_value": ["1313", "1391", "1392", "1393", "1394", "1399", "1430", "4641", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5962",
+		"validator_value": ["7990", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5966",
+		"validator_value": ["4791", "4792", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5967",
+		"validator_value": ["8220", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5969",
+		"validator_value": ["4799", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5971",
+		"validator_value": ["9005", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5983",
+		"validator_value": ["0510", "0520", "1910", "1921", "1922", "4661", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5993",
+		"validator_value": ["1200", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5995",
+		"validator_value": ["1090", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "5999",
+		"validator_value": ["1104", "2520", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "6010",
+		"validator_value": ["6421", "6422", "6614", "6615", "6619", "6630", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "6012",
+		"validator_value": ["6411", "6412", "6423", "6424", "6431", "6432", "6491", "6492", "6494", "6495", "6499", "6531", "6532", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "6051",
+		"validator_value": ["6493", "8291", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "6211",
+		"validator_value": ["6496", "6611", "6612", "6613", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "6300",
+		"validator_value": ["6511", "6512", "6513", "6515", "6521", "6522", "6523", "6621", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "6513",
+		"validator_value": ["6810", "6820", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7011",
+		"validator_value": ["5511", "5512", "5513", "5514", "5519", "5590", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7012",
+		"validator_value": ["5530", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7033",
+		"validator_value": ["5520", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7210",
+		"validator_value": ["9601", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7230",
+		"validator_value": ["9602", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7261",
+		"validator_value": ["9603", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7296",
+		"validator_value": ["7729", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7298",
+		"validator_value": ["9609", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7299",
+		"validator_value": ["4620", "9810", "9820", "0010", "0020", "0081", "0082", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7311",
+		"validator_value": ["5812", "5819", "7310", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7338",
+		"validator_value": ["1820", "8219", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7349",
+		"validator_value": ["811", "8110", "812", "8121", "8129", "9700", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7361",
+		"validator_value": ["7810", "7820", "7830", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7372",
+		"validator_value": ["620", "6201", "6311", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7375",
+		"validator_value": ["2680", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7379",
+		"validator_value": ["9511", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7392",
+		"validator_value": ["6202", "6629", "6910", "6920", "7010", "7020", "7120", "7210", "722", "7220", "7320", "7410", "7490", "8211", "8299", "8411", "8412", "8414", "8415", "8424", null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7393",
+		"validator_value": ["8010", "8020", "8030", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7394",
+		"validator_value": ["7721", "7730", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7399",
+		"validator_value": ["2819", "3811", "3812", "3821", "3822", "3830", "3900", "4610", "4665", "4669", "4690", "4774", "6399", "7740", "8230", "8292", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7512",
+		"validator_value": ["7710", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7534",
+		"validator_value": ["2212", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7538",
+		"validator_value": ["4520", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7622",
+		"validator_value": ["9512", "9521", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7629",
+		"validator_value": ["9522", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7699",
+		"validator_value": ["3312", "3314", "3319", "9524", "9529", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7829",
+		"validator_value": ["5911", "5912", "5913", "5920", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7832",
+		"validator_value": ["5914", "9004", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7841",
+		"validator_value": ["7722", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7922",
+		"validator_value": ["9003", "9006", "9008", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7929",
+		"validator_value": ["9007", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7941",
+		"validator_value": ["9311", "9319", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7991",
+		"validator_value": ["910", "9102", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7995",
+		"validator_value": ["9200", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7996",
+		"validator_value": ["9321", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7997",
+		"validator_value": ["9312", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "7999",
+		"validator_value": ["9329", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8011",
+		"validator_value": ["8621", "8622", "8691", "8692", "8699", "8710", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8050",
+		"validator_value": ["8720", "8730", "8790", "8810", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8062",
+		"validator_value": ["8610", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8211",
+		"validator_value": ["8513", "8521", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8220",
+		"validator_value": ["8530", "8543", "8544", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8299",
+		"validator_value": ["8522", "8523", "8541", "8542", "8551", "8552", "8553", "8559", "8560", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8351",
+		"validator_value": ["8511", "8512", "8891", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8398",
+		"validator_value": ["8899", "9499", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8641",
+		"validator_value": ["9412", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8651",
+		"validator_value": ["9492", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8661",
+		"validator_value": ["9491", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8699",
+		"validator_value": ["9411", "9420", "0090", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "8911",
+		"validator_value": ["7111", "7112", "721", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+	},
+	{
+		"partner_value": "9399",
+		"validator_value": ["8413", "8421", "8422", "8423", "8430"]
+	}
+]

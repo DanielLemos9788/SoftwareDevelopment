@@ -69,3 +69,34 @@ nexun = WashingMachine()
 nexun.wash("hot")
 
 """
+"""
+class Miles():
+    def __init__(self, distance=0):
+        self.distance = distance
+    def to_km(self):
+        return (self.distance * 1.609344)
+    #Getter Method
+    def get_distance(self):
+        return self.distance
+    #Setter Method
+    def define_distance(self, value):
+        if value < 0:
+            raise ValueError("The distance cannot be a negative number")
+        self.distance = value
+    #Delete Method
+    def delete_distance(self):
+        del self.distance
+
+
+airplane = Miles(20)
+
+print(airplane.distance)
+print(airplane.to_km())
+print(airplane.get_distance())
+print(airplane.define_distance(150))
+print(airplane.get_distance())
+print(airplane.delete_distance())
+"""
+
+
+
