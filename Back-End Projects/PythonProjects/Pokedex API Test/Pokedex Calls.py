@@ -19,7 +19,7 @@ unique_structure_chain_5 = ["135"]
 unique_structure_chain_9 = ["67"]
 
 ##Evolution Chain Unique Identifier
-#evolution_chain_id = input("What Pokemon Evolution Chain You Wanna Fetch (Enter a Number Between 1-477)?: ")
+evolution_chain_id = input("What Pokemon Evolution Chain You Wanna Fetch (Enter a Number Between 1-477)?: ")
 
 class Pokemon():
     def __init__(self, mon_id, evolution_chain_id, name, first_type, second_type, height, weight,
@@ -42,7 +42,7 @@ class Pokemon():
         self.connection = sqlite3.connect("pokemon_data_base.db")
         self.cursor = self.connection.cursor()
 
-    def insert_pokemon_info(self):
+    def insert_pokemon_info(self, mon_id):
         self.cursor.execute("""
         INSERT INTO pokemon_information VALUES
         ({}, {}, "{}", "{}", "{}", {}, {}, {}, {}, {}, {}, {}, {}, "{}")
@@ -52,6 +52,7 @@ class Pokemon():
                    self.special_attack, self.special_defense, self.speed,
                    self.evolutions_list))
         self.connection.commit()
+
 
     def load_pokemon_info(self, mon_id):
         self.cursor.execute("""
@@ -74,6 +75,20 @@ class Pokemon():
         self.special_defense = results[11]
         self.speed = results[12]
         self.evolutions_list = results[13]
+        print(results)
+
+    def load_all_pokemon(self):
+        self.cursor.execute("""
+        SELECT * FROM pokemon_information
+        """)
+
+        results = self.cursor.fetchall()
+        print(results)
+
+    def delete_all_pokemon_info(self):
+        self.cursor.execute("""
+        DELETE FROM pokemon_information
+        """)
 
 
 def get_evolution_chain(chain_id):
@@ -150,32 +165,31 @@ def get_evolution_chain(chain_id):
     print(evolution_dictionary)
     return evolution_list, chain_id
 
-
 def get_pokemon_information(pokemon_evolution_list,chain_id):
     for pokemon in pokemon_evolution_list:
-        pokemon_dictionary = {}
         pokemon_url = api_url_pokemon + pokemon
         response = requests.get(pokemon_url)
         data = response.json()
 
-        pokemon_dictionary["mon_id"] = data["id"]
-        pokemon_dictionary["evolution_chain_id"] = chain_id
-        pokemon_dictionary["name"] = data["name"]
-        pokemon_dictionary["first_type"] = data["types"][0]["type"]["name"]
-        pokemon_dictionary["second_type"] = data["types"][1]["type"]["name"]
-        pokemon_dictionary["height"] = data["height"]
-        pokemon_dictionary["weight"] = data["weight"]
-        pokemon_dictionary["hp"] = data["stats"][0]["base_stat"]
-        pokemon_dictionary["attack"] = data["stats"][1]["base_stat"]
-        pokemon_dictionary["defense"] = data["stats"][2]["base_stat"]
-        pokemon_dictionary["special_attack"] = data["stats"][3]["base_stat"]
-        pokemon_dictionary["special_defense"] = data["stats"][4]["base_stat"]
-        pokemon_dictionary["speed"] = data["stats"][5]["base_stat"]
-        pokemon_dictionary["evolutions"] = pokemon_evolution_list
+        mon_id = data["id"]
+        evolution_chain_id = chain_id
+        name = data["name"]
+        first_type = data["types"][0]["type"]["name"]
+        second_type = data["types"][1]["type"]["name"]
+        height = data["height"]
+        weight = data["weight"]
+        hp = data["stats"][0]["base_stat"]
+        attack = data["stats"][1]["base_stat"]
+        defense = data["stats"][2]["base_stat"]
+        special_attack = data["stats"][3]["base_stat"]
+        special_defense = data["stats"][4]["base_stat"]
+        speed = data["stats"][5]["base_stat"]
+        evolutions_list = pokemon_evolution_list
 
+        iterative_pokemon = Pokemon(mon_id, evolution_chain_id, name, first_type, second_type, height, weight,
+                                    hp, attack, defense, special_attack, special_defense, speed, evolutions_list)
 
-        print(pokemon_dictionary)
-
+        iterative_pokemon.insert_pokemon_info()
 
 def main_process():
     pass
@@ -186,19 +200,12 @@ def main_process():
 
 miraidon = Pokemon(1008, 800, "miraidon", "dragon", "electric", 20, 550,
                  100, 70, 100, 130, 120, 140, ["miraidon"])
-print(miraidon)
-miraidon.insert_pokemon_info()
-miraidon.load_pokemon_info(1008)
+
+miraidon.delete_all_pokemon_info()
+#miraidon.load_pokemon_info(100)
+miraidon.load_all_pokemon()
 
 
-connection = sqlite3.connect("pokemon_data_base.db")
-cursor = connection.cursor()
-
-cursor.execute("SELECT * FROM pokemon_information")
-results = cursor.fetchall()
-print(results)
-
-connection.close()
 
 #CREATE A LIST AFTER CHAIN IS DONE AND RETURN LIST + CHAIN ID...
 #THEN CREATE THE FUNCTION TO FETCH THE INFORMATION OF MANY POKEMON AT THE SAME TIME
