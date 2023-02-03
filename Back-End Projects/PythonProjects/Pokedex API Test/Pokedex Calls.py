@@ -89,6 +89,7 @@ class Pokemon():
         self.cursor.execute("""
         DELETE FROM pokemon_information
         """)
+        self.connection.commit()
 
 
 def get_evolution_chain(chain_id):
@@ -201,7 +202,7 @@ def main_process():
 miraidon = Pokemon(1008, 800, "miraidon", "dragon", "electric", 20, 550,
                  100, 70, 100, 130, 120, 140, ["miraidon"])
 
-miraidon.delete_all_pokemon_info()
+#miraidon.delete_all_pokemon_info()
 #miraidon.load_pokemon_info(100)
 miraidon.load_all_pokemon()
 
