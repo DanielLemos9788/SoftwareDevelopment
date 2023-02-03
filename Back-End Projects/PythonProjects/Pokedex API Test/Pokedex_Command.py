@@ -1,5 +1,6 @@
 import requests
 import sqlite3
+from fastapi import FastAPI
 
 #VARIABLES
 ##Evolution-Chain Pokemon API URL
@@ -19,7 +20,7 @@ unique_structure_chain_5 = ["135"]
 unique_structure_chain_9 = ["67"]
 
 ##Evolution Chain Unique Identifier
-evolution_chain_id = input("What Pokemon Evolution Chain You Wanna Fetch (Enter a Number Between 1-477)?: ")
+#evolution_chain_id = input("What Pokemon Evolution Chain You Wanna Fetch (Enter a Number Between 1-477)?: ")
 
 class Pokemon():
     def __init__(self, mon_id, evolution_chain_id, name, first_type, second_type, height, weight,
@@ -216,9 +217,12 @@ def get_pokemon_information(pokemon_evolution_list,chain_id):
 def main_process():
     pass
 
-#Feth Information from the API
-x,y = get_evolution_chain(evolution_chain_id)
-get_pokemon_information(x,y)
+#Feth Information from the API MAIN Process
+#x,y = get_evolution_chain(evolution_chain_id)
+#get_pokemon_information(x,y)
+
+p = Pokemon(12345,1000,"x","w","z",1,2,3,4,5,6,7,8,"bb")
+p.load_pokemon_info(1)
 
 
 

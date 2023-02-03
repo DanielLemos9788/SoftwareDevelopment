@@ -1,21 +1,31 @@
-from flask import *
-import json, time
+"""from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET"])
+@app.get('/')
 def home_page():
-    data_set = {"Page": "Home", "Message": "Successfully Loaded Home Page", "Timestamp": time-time()}
-    json_dump = json.dump(data_set)
-    return json_dump
+    data_set = {"Result": "Server Online"}
+    return data_set
 
-@app.route("/pokemon/", methods=["GET"])
+@app.get('/pokemon/')
 def request_page():
-    pokemon_query = str(request.args.get("pokemon")) #/pokemon/?=XXX
+    pokemon_query = "Charizard"
+    return pokemon_query
 
-    data_set = {"Page": "Home", "Message": f"Successfully Request for {pokemon_query}", "Timestamp": time-time()}
-    json_dump = json.dump(data_set)
-    return json_dump
+"""
+from fastapi import FastAPI
+#import requests
+#import sqlite3
 
-app.run(port=7777)
-request_page()
+
+app = FastAPI()
+
+@app.get('/')
+def initial_page():
+    return{"Response": "Pokedex Server Online"}
+
+@app.get('/pokemon/{mon_id}')
+def load_pokemon_response(mon_id: int):
+    mon_id = mon_id
+    print(mon_id)
+
