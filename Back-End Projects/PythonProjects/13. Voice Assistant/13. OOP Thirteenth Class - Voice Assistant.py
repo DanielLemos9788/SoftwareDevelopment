@@ -161,6 +161,8 @@ def assistant_operation():
             main_request = main_request.replace("PLAY", "")
             pywhatkit.playonyt(main_request)
             continue
+        elif "DO YOU LOVE ME" in main_request:
+            talk("Off course I love you my Lord")
         #Make a Random Joke
         elif "JOKE" in main_request:
             talk(pyjokes.get_joke("en", "all"))
