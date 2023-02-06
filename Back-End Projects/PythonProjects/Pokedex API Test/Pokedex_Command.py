@@ -18,8 +18,8 @@ unique_structure_chain_5 = ["135"]
 ##Eevee: eight options for the second evolution
 unique_structure_chain_9 = ["67"]
 
-##Evolution Chain Unique Identifier
-evolution_chain_id = input("What Pokemon Evolution Chain You Wanna Fetch (Enter a Number Between 1-477)?: ")
+#Current Chain IDs
+max_chain_id = 477
 
 class Pokemon():
     def __init__(self, mon_id, evolution_chain_id, name, first_type, second_type, height, weight,
@@ -213,13 +213,29 @@ def get_pokemon_information(pokemon_evolution_list,chain_id):
 
         iterative_pokemon.insert_pokemon_info(mon_id)
 
-def main_process():
-    pass
+def pokedex_command(fetch_all):
+    iterator = 1
+    if fetch_all == True:
+        while iterator <= max_chain_id:
+            iterator = str(iterator)
+            list_x, y = get_evolution_chain(iterator)
+            get_pokemon_information(list_x, y)
+            iterator = int(iterator)
+            iterator += 1
+    else:
+        ##Evolution Chain Unique Identifier
+        evolution_chain_id = input("What Pokemon Evolution Chain You Wanna Fetch (Enter a Number Between 1-477)?: ")
+        list_x, y = get_evolution_chain(evolution_chain_id)
+        get_pokemon_information(list_x, y)
 
+"""
 #Feth Information from the API MAIN Process
 x,y = get_evolution_chain(evolution_chain_id)
 get_pokemon_information(x,y)
+"""
 
+x = True
+pokedex_command(x)
 
 
 
