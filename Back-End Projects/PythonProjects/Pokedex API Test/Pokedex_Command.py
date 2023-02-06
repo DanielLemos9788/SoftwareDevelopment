@@ -224,3 +224,4 @@ get_pokemon_information(x,y)
 
 
 
+
