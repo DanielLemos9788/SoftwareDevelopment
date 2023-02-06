@@ -105,8 +105,8 @@ class Pokemon():
         """)
         self.connection.commit()
 
-def get_evolution_chain(chain_id):
-    pokemon_chain_url = api_url_evolution + chain_id
+def get_evolution_chain(evolution_chain_id):
+    pokemon_chain_url = api_url_evolution + evolution_chain_id
     response = requests.get(pokemon_chain_url)
 
     try:
@@ -176,13 +176,18 @@ def get_evolution_chain(chain_id):
         chain_id = data["id"]
 
         print(evolution_dictionary)
+        print(pokemon_chain_url)
+
         return evolution_list, chain_id
 
-    except:
+    except ValueError:
         print("Invalid Evolution Chain Number: Enter a Number Between 1-477")
         print("Please note that NOT all pokemon evolution chains are available")
+        print(pokemon_chain_url)
 
-def get_pokemon_information(pokemon_evolution_list,chain_id):
+def get_pokemon_information(pokemon_evolution_list, chain_id):
+
+
     for pokemon in pokemon_evolution_list:
         pokemon_url = api_url_pokemon + pokemon
         response = requests.get(pokemon_url)
@@ -213,29 +218,47 @@ def get_pokemon_information(pokemon_evolution_list,chain_id):
 
         iterative_pokemon.insert_pokemon_info(mon_id)
 
-def pokedex_command(fetch_all):
-    iterator = 1
-    if fetch_all == True:
-        while iterator <= max_chain_id:
-            iterator = str(iterator)
-            list_x, y = get_evolution_chain(iterator)
-            get_pokemon_information(list_x, y)
-            iterator = int(iterator)
-            iterator += 1
-    else:
-        ##Evolution Chain Unique Identifier
-        evolution_chain_id = input("What Pokemon Evolution Chain You Wanna Fetch (Enter a Number Between 1-477)?: ")
-        list_x, y = get_evolution_chain(evolution_chain_id)
-        get_pokemon_information(list_x, y)
+def poke_command(verification_list):
+    for chain_id in verification_list:
+        x, y = get_evolution_chain(chain_id)
+        get_pokemon_information(x, y)
 
-"""
+
+##Evolution Chain Unique Identifier
+evolution_chain_id = input("What Pokemon Evolution Chain You Wanna Fetch (Enter a Number Between 1-477)?: ")
+print(type(evolution_chain_id))
+print(evolution_chain_id)
 #Feth Information from the API MAIN Process
 x,y = get_evolution_chain(evolution_chain_id)
 get_pokemon_information(x,y)
+
+
+"""
+r_list = list(range(1, max_chain_id + 1))
+verification_list = []
+for r in r_list:
+    r = str(r)
+    verification_list.append(r)
+
+poke_command(verification_list)
 """
 
-x = True
-pokedex_command(x)
+"""
+evolution_chain_id = "21"
+
+pokemon_chain_url = api_url_evolution + evolution_chain_id
+response = requests.get(pokemon_chain_url)
+data = response.json()
+data_evolutions_counter = str(data).count("evolves_to")
+print(data_evolutions_counter)
+"""
+
+
+
+
+
+
+
 
 
 
