@@ -15,12 +15,16 @@ Including another URLconf
 """
 #from django.contrib import admin
 from django.urls import path
-from monstigram_app import views
+from monstigram_app import views as local_views
+from posts import views as posts_views
 
 urlpatterns = [
-    path('hello-world/', views.greetings),
-    path('time-greet/', views.current_time_greet),
-    path('welcome/', views.welcome),
-    path('number_entry/', views.retrieve_numbers),
-    path('greeting/<str:name>/<int:age>/', views.greet_info_added)
+    path('hello-world/', local_views.greetings),
+    path('time-greet/', local_views.current_time_greet),
+    path('welcome/', local_views.welcome),
+    path('number_entry/', local_views.retrieve_numbers),
+    path('greeting/<str:name>/<int:age>/', local_views.greet_info_added),
+    path('posts/', posts_views.list_posts)
 ]
+
+
