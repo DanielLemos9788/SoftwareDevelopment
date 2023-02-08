@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Post(models.Model):
 
-    users = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     profile = models.ForeignKey('users.Profile', on_delete=models.CASCADE)
 
     title = models.CharField(max_length=255)
@@ -15,6 +15,9 @@ class Post(models.Model):
 
     def __str__(self):
         return '{} by @{}'.format(self.title, self.user.username)
+
+
+
 
 
 

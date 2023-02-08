@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
+
 from monstigram_app import views as local_views
 from posts import views as posts_views
 from users import views as users_views
@@ -30,7 +31,9 @@ urlpatterns = [
     path('number_entry/', local_views.retrieve_numbers, name='number'),
     path('greeting/<str:name>/<int:age>/', local_views.greet_info_added, name='greet'),
 
-    path('posts/', posts_views.list_posts, name='feed'),
+    path('', posts_views.list_posts, name='feed'),
+    path('posts/new/', posts_views.create_post, name='create_post'),
+
 
     path('users/login/', users_views.login_view, name='login'),
     path('users/logout/', users_views.logout_view, name='logout'),
