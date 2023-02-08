@@ -19,17 +19,25 @@ from django.conf.urls.static import static
 from django.urls import path
 from monstigram_app import views as local_views
 from posts import views as posts_views
+from users import views as users_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('hello-world/', local_views.greetings),
-    path('time-greet/', local_views.current_time_greet),
-    path('welcome/', local_views.welcome),
-    path('number_entry/', local_views.retrieve_numbers),
-    path('greeting/<str:name>/<int:age>/', local_views.greet_info_added),
+    path('hello-world/', local_views.greetings, name='hello_world'),
+    path('time-greet/', local_views.current_time_greet, name='time_greet'),
+    path('welcome/', local_views.welcome, name='welcome'),
+    path('number_entry/', local_views.retrieve_numbers, name='number'),
+    path('greeting/<str:name>/<int:age>/', local_views.greet_info_added, name='greet'),
 
-    path('posts/', posts_views.list_posts),
+    path('posts/', posts_views.list_posts, name='feed'),
+
+    path('users/login/', users_views.login_view, name='login'),
+    path('users/logout/', users_views.logout_view, name='logout'),
+    path('users/signup/', users_views.signup, name='signup'),
+    path('users/me/profile/', users_views.update_profile, name='update_profile')
+
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
