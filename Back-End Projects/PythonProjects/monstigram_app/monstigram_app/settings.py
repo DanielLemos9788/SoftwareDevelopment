@@ -81,12 +81,25 @@ WSGI_APPLICATION = 'monstigram_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'monstagram_data',
+        'USER': 'postgres',
+        'PASSWORD': 'Runsho%232323',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3'
     }
 }
+"""
 
 
 # Password validation
@@ -136,6 +149,8 @@ MEDIA_URL = '/media/'
 
 # URLs for Login
 LOGIN_URL = '/users/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = LOGIN_URL
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
