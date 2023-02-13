@@ -12,7 +12,7 @@ class AllPokemonViewSet(viewsets.ModelViewSet):
     serializer_class = AllPokemonSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['name', 'mon_id']
-    http_method_names = ['get']
+    http_method_names = ['get', 'post', 'delete']
 
 
 

@@ -9,6 +9,7 @@ class AllPokemonSerializer(serializers.HyperlinkedModelSerializer):
                   'name',
                   'evolution_chain_id',
                   'evolutions_list',
+                  'evolution_type',
                   'first_type',
                   'second_type',
                   'height',

@@ -15,6 +15,7 @@ class Pokemons(models.Model):
     special_attack = models.CharField(blank=True, max_length=250)
     special_defense = models.CharField(blank=True, max_length=250)
     speed = models.CharField(blank=True, max_length=250)
+    evolution_type = models.CharField(blank=True, max_length=250)
     evolutions_list = models.CharField(blank=True, max_length=250)
 
 

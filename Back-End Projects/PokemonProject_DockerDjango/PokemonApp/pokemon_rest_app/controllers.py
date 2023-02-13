@@ -22,6 +22,12 @@ unique_structure_chain_9 = ["67"]
 max_chain_id = 477
 
 
+def get_key(val, dic):
+    for key, value in dic.items():
+        if val == value:
+            return key
+
+
 def get_evolution_chain(evolution_chain_id):
     pokemon_chain_url = api_url_evolution + evolution_chain_id
     response = requests.get(pokemon_chain_url)
@@ -34,58 +40,58 @@ def get_evolution_chain(evolution_chain_id):
 
         if evolution_chain_id in special_chain_3:
 
-            evolution_dictionary["initial_pokemon"] = data["chain"]["species"]["name"]
-            evolution_dictionary["second_pokemon"] = data["chain"]["evolves_to"][0]["species"]["name"]
-            evolution_dictionary["third_pokemon"] = data["chain"]["evolves_to"][1]["species"]["name"]
+            evolution_dictionary["first_evolution"] = data["chain"]["species"]["name"]
+            evolution_dictionary["final_evolution_I"] = data["chain"]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["final_evolution_II"] = data["chain"]["evolves_to"][1]["species"]["name"]
 
         elif evolution_chain_id in special_chain_4:
 
-            evolution_dictionary["initial_pokemon"] = data["chain"]["species"]["name"]
-            evolution_dictionary["second_pokemon"] = data["chain"]["evolves_to"][0]["species"]["name"]
-            evolution_dictionary["third_pokemon"] = data["chain"]["evolves_to"][0]["evolves_to"][0]["species"]["name"]
-            evolution_dictionary["fourth_pokemon"] = data["chain"]["evolves_to"][0]["evolves_to"][1]["species"]["name"]
+            evolution_dictionary["first_evolution"] = data["chain"]["species"]["name"]
+            evolution_dictionary["second_evolution"] = data["chain"]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["final_evolution_I"] = data["chain"]["evolves_to"][0]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["final_evolution_II"] = data["chain"]["evolves_to"][0]["evolves_to"][1]["species"]["name"]
 
         elif evolution_chain_id in unique_structure_chain_4:
 
-            evolution_dictionary["initial_pokemon"] = data["chain"]["species"]["name"]
-            evolution_dictionary["second_pokemon"] = data["chain"]["evolves_to"][0]["species"]["name"]
-            evolution_dictionary["third_pokemon"] = data["chain"]["evolves_to"][1]["species"]["name"]
-            evolution_dictionary["fourth_pokemon"] = data["chain"]["evolves_to"][2]["species"]["name"]
+            evolution_dictionary["first_evolution"] = data["chain"]["species"]["name"]
+            evolution_dictionary["final_evolution_I"] = data["chain"]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["final_evolution_II"] = data["chain"]["evolves_to"][1]["species"]["name"]
+            evolution_dictionary["final_evolution_III"] = data["chain"]["evolves_to"][2]["species"]["name"]
 
         elif evolution_chain_id in unique_structure_chain_5:
 
-            evolution_dictionary["initial_pokemon"] = data["chain"]["species"]["name"]
-            evolution_dictionary["second_pokemon"] = data["chain"]["evolves_to"][0]["species"]["name"]
-            evolution_dictionary["third_pokemon"] = data["chain"]["evolves_to"][1]["species"]["name"]
-            evolution_dictionary["fourth_pokemon"] = data["chain"]["evolves_to"][0]["evolves_to"][0]["species"]["name"]
-            evolution_dictionary["fifth_pokemon"] = data["chain"]["evolves_to"][1]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["first_evolution"] = data["chain"]["species"]["name"]
+            evolution_dictionary["second_evolution_I"] = data["chain"]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["second_evolution_II"] = data["chain"]["evolves_to"][1]["species"]["name"]
+            evolution_dictionary["final_evolution_I"] = data["chain"]["evolves_to"][0]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["final_evolution_II"] = data["chain"]["evolves_to"][1]["evolves_to"][0]["species"]["name"]
 
         elif evolution_chain_id in unique_structure_chain_9:
 
-            evolution_dictionary["initial_pokemon"] = data["chain"]["species"]["name"]
-            evolution_dictionary["second_pokemon"] = data["chain"]["evolves_to"][0]["species"]["name"]
-            evolution_dictionary["third_pokemon"] = data["chain"]["evolves_to"][1]["species"]["name"]
-            evolution_dictionary["fourth_pokemon"] = data["chain"]["evolves_to"][2]["species"]["name"]
-            evolution_dictionary["fifth_pokemon"] = data["chain"]["evolves_to"][3]["species"]["name"]
-            evolution_dictionary["sixth_pokemon"] = data["chain"]["evolves_to"][4]["species"]["name"]
-            evolution_dictionary["seventh_pokemon"] = data["chain"]["evolves_to"][5]["species"]["name"]
-            evolution_dictionary["eighth_pokemon"] = data["chain"]["evolves_to"][6]["species"]["name"]
-            evolution_dictionary["ninth_pokemon"] = data["chain"]["evolves_to"][7]["species"]["name"]
+            evolution_dictionary["first_evolution"] = data["chain"]["species"]["name"]
+            evolution_dictionary["final_evolution_I"] = data["chain"]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["final_evolution_II"] = data["chain"]["evolves_to"][1]["species"]["name"]
+            evolution_dictionary["final_evolution_III"] = data["chain"]["evolves_to"][2]["species"]["name"]
+            evolution_dictionary["final_evolution_IV"] = data["chain"]["evolves_to"][3]["species"]["name"]
+            evolution_dictionary["final_evolution_V"] = data["chain"]["evolves_to"][4]["species"]["name"]
+            evolution_dictionary["final_evolution_VI"] = data["chain"]["evolves_to"][5]["species"]["name"]
+            evolution_dictionary["final_evolution_VII"] = data["chain"]["evolves_to"][6]["species"]["name"]
+            evolution_dictionary["final_evolution_VII"] = data["chain"]["evolves_to"][7]["species"]["name"]
 
         elif data_evolutions_counter == 1:
 
-            evolution_dictionary["initial_pokemon"] = data["chain"]["species"]["name"]
+            evolution_dictionary["final_evolution"] = data["chain"]["species"]["name"]
 
         elif data_evolutions_counter == 2:
 
-            evolution_dictionary["initial_pokemon"] = data["chain"]["species"]["name"]
-            evolution_dictionary["second_pokemon"] = data["chain"]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["first_evolution"] = data["chain"]["species"]["name"]
+            evolution_dictionary["final_evolution"] = data["chain"]["evolves_to"][0]["species"]["name"]
 
         elif data_evolutions_counter == 3:
 
-            evolution_dictionary["initial_pokemon"] = data["chain"]["species"]["name"]
-            evolution_dictionary["second_pokemon"] = data["chain"]["evolves_to"][0]["species"]["name"]
-            evolution_dictionary["third_pokemon"] = data["chain"]["evolves_to"][0]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["first_evolution"] = data["chain"]["species"]["name"]
+            evolution_dictionary["second_evolution"] = data["chain"]["evolves_to"][0]["species"]["name"]
+            evolution_dictionary["final_evolution"] = data["chain"]["evolves_to"][0]["evolves_to"][0]["species"]["name"]
 
         for x in evolution_dictionary.values():
             evolution_list.append(x)
@@ -95,7 +101,7 @@ def get_evolution_chain(evolution_chain_id):
         print(evolution_dictionary)
         print(pokemon_chain_url)
 
-        return evolution_list, chain_id
+        return evolution_list, chain_id, evolution_dictionary
 
     except ValueError:
         print("Invalid Evolution Chain Number: Enter a Number Between 1-477")
@@ -103,7 +109,7 @@ def get_evolution_chain(evolution_chain_id):
         print(pokemon_chain_url)
 
 
-def get_and_save_pokemon_information(pokemon_evolution_list, chain_id):
+def get_and_save_pokemon_information(pokemon_evolution_list, chain_id, evolution_dictionary):
 
     for pokemon in pokemon_evolution_list:
         pokemon_url = api_url_pokemon + pokemon
@@ -131,13 +137,14 @@ def get_and_save_pokemon_information(pokemon_evolution_list, chain_id):
         poke.special_attack = data["stats"][3]["base_stat"]
         poke.special_defense = data["stats"][4]["base_stat"]
         poke.speed = data["stats"][5]["base_stat"]
+        poke.evolution_type = get_key(pokemon, evolution_dictionary)
         poke.evolutions_list = pokemon_evolution_list
 
         poke.save()
 
         evo.evolution_chain_id = chain_id
         evo.name = data["name"]
-        evo.evolution_type = "X23"
+        evo.evolution_type = get_key(pokemon, evolution_dictionary)
         evo.pokemon = poke
 
         evo.save()

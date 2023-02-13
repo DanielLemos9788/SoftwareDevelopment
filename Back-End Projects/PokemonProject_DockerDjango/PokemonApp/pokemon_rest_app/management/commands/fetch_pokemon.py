@@ -22,8 +22,8 @@ class Command(BaseCommand):
         chain_id = str(options.get('chain_id'))
 
         try:
-            x, y = get_evolution_chain(chain_id)
-            get_and_save_pokemon_information(x, y)
+            x, y, z = get_evolution_chain(chain_id)
+            get_and_save_pokemon_information(x, y, z)
 
         except ValueError:
             print("Invalid Evolution Chain Number: Enter a Number Between 1-477")
