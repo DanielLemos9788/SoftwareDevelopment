@@ -1,17 +1,46 @@
-from django.contrib.auth.models import User, Group
+from pokemon_rest_app.models import Pokemons, Evolutions
 from rest_framework import serializers
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class AllPokemonSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = User
-        fields = ['url', 'username', 'email', 'groups']
+        model = Pokemons
+        fields = ['mon_id',
+                  'name',
+                  'evolution_chain_id',
+                  'evolutions_list',
+                  'first_type',
+                  'second_type',
+                  'height',
+                  'weight',
+                  'hp',
+                  'attack',
+                  'defense',
+                  'special_attack',
+                  'special_defense',
+                  'speed'
+                  ]
 
 
-class GroupSerializer(serializers.HyperlinkedModelSerializer):
+class SinglePokemonSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Group
-        fields = ['url', 'name']
+        model = Pokemons
+        fields = ['mon_id',
+                  'name',
+                  'evolution_chain_id',
+                  'evolutions_list',
+                  'first_type',
+                  'second_type',
+                  'height',
+                  'weight',
+                  'hp',
+                  'attack',
+                  'defense',
+                  'special_attack',
+                  'special_defense',
+                  'speed'
+                  ]
+
 
 
 

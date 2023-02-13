@@ -1,21 +1,46 @@
-from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from pokemon_rest_app.serializers import UserSerializer, GroupSerializer
+from pokemon_rest_app.serializers import AllPokemonSerializer, SinglePokemonSerializer
+from pokemon_rest_app.models import Pokemons, Evolutions
+from django_filters.rest_framework import DjangoFilterBackend
 
 
-class UserViewSet(viewsets.ModelViewSet):
+class AllPokemonViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to be viewed or edited.
+    API endpoint that allows All Pokemons to be viewed.
     """
-    queryset = User.objects.all().order_by('-date_joined')
-    serializer_class = UserSerializer
+    queryset = Pokemons.objects.all()
+    serializer_class = AllPokemonSerializer
+    http_method_names = ['get']
 
 
-class GroupViewSet(viewsets.ModelViewSet):
+class SinglePokemonViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows groups to be viewed or edited.
+    API endpoint that allows One Pokemon to be viewed.
     """
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
+    queryset = Pokemons.objects.all()
+    serializer_class = SinglePokemonSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['name', 'mon_id']
+    http_method_names = ['get']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

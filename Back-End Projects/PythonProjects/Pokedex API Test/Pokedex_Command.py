@@ -1,3 +1,4 @@
+from pokemon_rest_app.controllers import *
 import requests
 import sqlite3
 
@@ -187,7 +188,6 @@ def get_evolution_chain(evolution_chain_id):
 
 def get_pokemon_information(pokemon_evolution_list, chain_id):
 
-
     for pokemon in pokemon_evolution_list:
         pokemon_url = api_url_pokemon + pokemon
         response = requests.get(pokemon_url)
@@ -223,7 +223,7 @@ def poke_command(verification_list):
         x, y = get_evolution_chain(chain_id)
         get_pokemon_information(x, y)
 
-
+"""
 ##Evolution Chain Unique Identifier
 evolution_chain_id = input("What Pokemon Evolution Chain You Wanna Fetch (Enter a Number Between 1-477)?: ")
 print(type(evolution_chain_id))
@@ -231,27 +231,14 @@ print(evolution_chain_id)
 #Feth Information from the API MAIN Process
 x,y = get_evolution_chain(evolution_chain_id)
 get_pokemon_information(x,y)
-
-
-"""
-r_list = list(range(1, max_chain_id + 1))
-verification_list = []
-for r in r_list:
-    r = str(r)
-    verification_list.append(r)
-
-poke_command(verification_list)
 """
 
-"""
-evolution_chain_id = "21"
+chain_id = '1'
+x, y = get_evolution_chain(chain_id)
+get_and_save_pokemon_information(x, y)
 
-pokemon_chain_url = api_url_evolution + evolution_chain_id
-response = requests.get(pokemon_chain_url)
-data = response.json()
-data_evolutions_counter = str(data).count("evolves_to")
-print(data_evolutions_counter)
-"""
+
+
 
 
 
