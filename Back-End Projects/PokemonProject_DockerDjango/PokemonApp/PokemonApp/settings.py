@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_filters',
-    'pokemon_rest_app'
+    'pokemon_rest_app',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'PokemonApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'pokemon_mo_database',
+        'NAME': 'pokemon_final_database',
         'USER': 'postgres',
         'PASSWORD': 'Runsho%232323',
         'HOST': 'localhost',

@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from pokemon_rest_app.serializers import AllPokemonSerializer
-from pokemon_rest_app.models import Pokemons, Evolutions
+from pokemon_rest_app.models import Pokemons
 from django_filters.rest_framework import DjangoFilterBackend
 
 
