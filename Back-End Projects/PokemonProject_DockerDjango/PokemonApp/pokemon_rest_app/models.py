@@ -19,8 +19,8 @@ class Pokemons(models.Model):
 
 
 class Evolutions(models.Model):
-    evolution_chain_id = models.CharField(primary_key=True, max_length=250)
-    name = models.CharField(max_length=250)
+    evolution_chain_id = models.CharField(max_length=250)
+    name = models.CharField(primary_key=True, max_length=250)
     evolution_type = models.CharField(blank=True, max_length=250)
     pokemon = models.ForeignKey(Pokemons, on_delete=models.CASCADE)
 

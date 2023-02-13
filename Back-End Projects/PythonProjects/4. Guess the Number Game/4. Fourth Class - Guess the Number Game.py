@@ -184,7 +184,7 @@
  #   answer = input("Do you wanna continue? (Yes or No): ").lower()
   #  print("You are a demigod")
 #else:
- #   print("The reinforcement stopped by your command")
+ #   print("The reinforcement stopped by your commands")
 
 #PASS Command
 
