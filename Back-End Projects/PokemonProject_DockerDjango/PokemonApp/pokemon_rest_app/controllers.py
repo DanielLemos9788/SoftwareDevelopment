@@ -105,7 +105,17 @@ def get_evolution_chain(evolution_chain_id):
 
 def get_and_save_pokemon_information(pokemon_evolution_list, chain_id):
 
+    # Iteration for Every Pokemon Present on the Evolution Chain
     for pokemon in pokemon_evolution_list:
+        pokemon_exists = Pokemons.objects.filter(name=pokemon).exists()
+
+        # Verification: Pokemon is NOT present on database
+        if pokemon_exists:
+            print(f"The pokemon: {pokemon} and its evolution line {pokemon_evolution_list} \n"
+                  f"Already Exist on the DataBase, ¡Please Enter a Different Chain Number!")
+            break
+
+        # Creation of the Pokemon Instance from Django Model
         pokemon_url = api_url_pokemon + pokemon
         response = requests.get(pokemon_url)
         data = response.json()
@@ -117,10 +127,12 @@ def get_and_save_pokemon_information(pokemon_evolution_list, chain_id):
         poke.name = data["name"]
         poke.first_type = data["types"][0]["type"]["name"]
 
+        """
         try:
             poke.second_type = data["types"][1]["type"]["name"]
         except IndexError:
             poke.second_type = ""
+            """
 
         poke.height = data["height"]
         poke.weight = data["weight"]
@@ -132,4 +144,20 @@ def get_and_save_pokemon_information(pokemon_evolution_list, chain_id):
         poke.speed = data["stats"][5]["base_stat"]
         poke.evolutions_list = pokemon_evolution_list
 
+        # Saving the Instance on the DataBase
         poke.save()
+
+        # Creation of the Evolution Instance from Django Models
+        evo = Evolutions()
+
+        evo.name = data["name"]
+        evo.evolution_chain_id = chain_id
+        evo.evolution_type = 'X23'
+        evo.pokemon = poke
+        import pdb; pdb.set_trace()
+
+        evo.save()
+
+        return f"Successfully Updated to the Database"
+
+
