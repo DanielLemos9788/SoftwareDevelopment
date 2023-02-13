@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'pokemon_rest_app'
 
 ]
 
@@ -75,10 +76,24 @@ WSGI_APPLICATION = 'PokemonApp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+"""
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'pokemon_mo_database',
+        'USER': 'postgres',
+        'PASSWORD': 'Runsho%232323',
+        'HOST': 'localhost',
+        'PORT': '5432'
+
     }
 }
 

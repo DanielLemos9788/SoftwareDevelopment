@@ -1,24 +1,24 @@
 import requests
 import sqlite3
 
-#VARIABLES
-##Evolution-Chain Pokemon API URL
+# VARIABLES
+# Evolution-Chain Pokemon API URL
 api_url_evolution = "https://pokeapi.co/api/v2/evolution-chain/"
-##Pokemon Information API URL
+# Pokemon Information API URL
 api_url_pokemon = "https://pokeapi.co/api/v2/pokemon/"
 
-##Pokemons with two options on the second evolution
+# Pokemons with two options on the second evolution
 special_chain_3 = ["442", "213", "188", "144", "33", "186", "58"]
-##Pokemons with two options on the third evolution
+# Pokemons with two options on the third evolution
 special_chain_4 = ["413", "18", "140", "26"]
-##Tyrogue: three options for the second evolution
+# Tyrogue: three options for the second evolution
 unique_structure_chain_4 = ["47"]
-##Wurmple: two options for the second evolution and then one option for each of the third evolutions
+# Wurmple: two options for the second evolution and then one option for each of the third evolutions
 unique_structure_chain_5 = ["135"]
-##Eevee: eight options for the second evolution
+# Eevee: eight options for the second evolution
 unique_structure_chain_9 = ["67"]
 
-#Current Chain IDs
+# Current Chain IDs
 max_chain_id = 477
 
 class Pokemon():
