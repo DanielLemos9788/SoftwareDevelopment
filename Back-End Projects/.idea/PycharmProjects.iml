@@ -3,6 +3,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/PokemonProject_DockerDjango/PokemonApp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PokemonProject_DockerDjango/PokemonApp/PokemonApp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PokemonProject_DockerDjango/PokemonApp/pokemon_rest_app" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
