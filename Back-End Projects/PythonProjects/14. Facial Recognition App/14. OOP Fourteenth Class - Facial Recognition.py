@@ -1,4 +1,4 @@
-from cv2 import cv2
+from cv2 import *
 import face_recognition as fr
 
 # Upload Images
