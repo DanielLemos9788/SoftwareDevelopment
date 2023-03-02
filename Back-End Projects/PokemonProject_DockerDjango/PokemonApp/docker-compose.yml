@@ -2,6 +2,7 @@ version: '3'
 services:
   db:
     image: postgres
+    container_name: pokemon_db_data
     volumes:
       - db_data:/var/lib/postgresql/data/
     environment:
@@ -9,9 +10,10 @@ services:
       - POSTGRES_PASSWORD=Runsho%232323
       - POSTGRES_DB=pokemon_final_database
     ports:
-      - 5432:5432
+      - 5435:5432
   web:
     build: .
+    container_name: pokemon_rest_API
     command: python3 manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
