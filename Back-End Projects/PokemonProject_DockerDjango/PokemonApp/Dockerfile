@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.9-slim-buster
 
 # Keeps Python from generating .pyc files in the container
 ENV PYTHONUNBUFFERED=1
@@ -17,12 +17,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY requirements /tmp/requirements
 
-RUN pip install --upgrade pip==20.2.3
+RUN pip install --upgrade pip==23.0.1
 RUN pip install -Ur /tmp/requirements/requirements.txt
 
-ENV APP_HOME=/pokemon_services
 
+ENV APP_HOME=/code
 WORKDIR $APP_HOME
+
 
 COPY postgres-healthy.sh /tmp/postgres-healthy.sh
 
@@ -33,7 +34,9 @@ USER user
 
 ENTRYPOINT ["bash", "/tmp/postgres-healthy.sh"]
 
-CMD python pokemon_services/manage.py migrate && python pokemon_services/manage.py runserver 0:8000
+ENV PYTHONPATH=/code
+
+CMD python manage.py migrate && python manage.py runserver 0:8000
 
 
 

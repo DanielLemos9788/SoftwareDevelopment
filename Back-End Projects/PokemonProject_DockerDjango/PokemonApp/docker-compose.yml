@@ -25,10 +25,7 @@ services:
     ports:
       - '8000:8000'
     volumes:
-      - ./mo_services:/mo_services/mo_services
-      - ./tests:/tests
-      - ${HOME}/.gitconfig:/home/user/.gitconfig:ro
-      - ${HOME}/.ssh:/home/user/.ssh:ro
+      - .:/code
     depends_on:
       - postgres
 
