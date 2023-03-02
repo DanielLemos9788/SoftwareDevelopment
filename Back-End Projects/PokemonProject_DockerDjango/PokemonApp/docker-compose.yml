@@ -1,28 +1,40 @@
 version: '3'
+
 services:
-  db:
-    image: postgres
-    container_name: pokemon_db_data
-    volumes:
-      - db_data:/var/lib/postgresql/data/
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=Runsho%232323
-      - POSTGRES_DB=pokemon_final_database
+  postgres:
+    image: postgres:14
+    command: postgres -c log_statement=all
     ports:
       - 5435:5432
-  web:
-    build: .
-    container_name: pokemon_rest_API
-    command: python3 manage.py runserver 0.0.0.0:8000
+    environment:
+      - POSTGRES_DB=pokemon_final_database
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Runsho%232323
     volumes:
-      - .:/code
+      - postgres_data:/var/lib/postgresql/data/
+
+  worker:
+    tty: true
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PIP_DEFAULT_TIMEOUT=100
+      - DATABASE=postgres
     ports:
-      - "8000:8000"
+      - '8000:8000'
+    volumes:
+      - ./mo_services:/mo_services/mo_services
+      - ./tests:/tests
+      - ${HOME}/.gitconfig:/home/user/.gitconfig:ro
+      - ${HOME}/.ssh:/home/user/.ssh:ro
     depends_on:
-      - db
+      - postgres
+
 volumes:
-  db_data:
+  postgres_data:
+
 
 
 
