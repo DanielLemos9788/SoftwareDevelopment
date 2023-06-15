@@ -7,7 +7,7 @@ from pokemon_rest_app.models import Pokemons
 class Command(BaseCommand):
     help = ("""Deletes All the Information on the Pokemon Data Base on Postgres
         In Order to Execute the Command Please Follow the Example -->
-        python manage.py fetch_pokemon --chain_id 123
+        python manage.py delete_all_pokemon.py
         """)
 
     def handle(self, *args, **options):
